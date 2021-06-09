@@ -22,4 +22,40 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# book-service
+# BOOK SERVICE
+
+## Using JWT for API Authentication
+
+## User Info Login in User Seeder
+Username = admin\
+Password = password\
+is_admin = true\
+<br>
+Username = user1\
+Password = password\
+is_admin = false\
+<br>
+Username = user2\
+Password = password\
+is_admin = false<br>
+<br>
+## Book Routes
+Path = book/create/ <br>
+Method = POST<br>
+Middleware = Auth, Admin<br>
+Params = - title: required<br>
+         - description: nullable<br>
+<br>
+Path = books/<br>
+Method = GET<br>
+Middleware = Auth<br>
+<br>
+## Book Collection Routes
+Path = book/collections/<br>
+Method = GET<br>
+Middleware = Auth<br>
+<br>
+Path = book/collection/add/<br>
+Method = POST<br>
+Middleware = Auth<br>
+Params = - book_id: required<br>
