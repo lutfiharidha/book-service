@@ -19,8 +19,8 @@ class CreateBookCollectionsTable extends Migration
             $table->bigInteger('book_id')->unsigned();
             $table->timestamps();
 
-            $table->foreign('user_id')->references('id')->on('book_service_auth.users')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('user_id')->references('id')->on('book_service_auth.users');
+            $table->foreign('book_id')->references('id')->on('books');
 
         });
     }

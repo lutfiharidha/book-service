@@ -29,6 +29,6 @@ class CreateBooksTable extends Migration
      */
     public function down()
     {
-        Schema::connection('mysql2')->dropIfExists('books');
+        Schema::dropIfExists('books');
     }
 }
