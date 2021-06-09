@@ -37,8 +37,8 @@ is_admin = false\
 <br>
 Username = user2\
 Password = password\
-is_admin = false\
-
+is_admin = false<br>
+<br>
 ## Book Routes
 Path = book/create/ <br>
 Method = POST<br>
