@@ -27,24 +27,24 @@ The Lumen framework is open-sourced software licensed under the [MIT license](ht
 ## Using JWT for API Authentication
 
 ## User Info Login in User Seeder
-Username = admin
-Password = password
-is_admin = true
+Username = admin\
+Password = password\
+is_admin = true\
+\
+Username = user1\
+Password = password\
+is_admin = false\
 
-Username = user1
-Password = password
-is_admin = false
-
-Username = user2
-Password = password
-is_admin = false
+Username = user2\
+Password = password\
+is_admin = false\
 
 ## Book Routes
-Path = book/create/
-Method = POST
-Middleware = Auth, Admin
-Params = - title: required
-         - description: nullable
+Path = book/create/ <br>
+Method = POST<br>
+Middleware = Auth, Admin<br>
+Params = - title: required<br>
+         - description: nullable<br>
 
 Path = books/
 Method = GET
