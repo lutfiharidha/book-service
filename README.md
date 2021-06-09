@@ -30,11 +30,11 @@ The Lumen framework is open-sourced software licensed under the [MIT license](ht
 Username = admin\
 Password = password\
 is_admin = true\
-\
+<br>
 Username = user1\
 Password = password\
 is_admin = false\
-
+<br>
 Username = user2\
 Password = password\
 is_admin = false\
@@ -45,17 +45,17 @@ Method = POST<br>
 Middleware = Auth, Admin<br>
 Params = - title: required<br>
          - description: nullable<br>
-
-Path = books/
-Method = GET
-Middleware = Auth
-
+<br>
+Path = books/<br>
+Method = GET<br>
+Middleware = Auth<br>
+<br>
 ## Book Collection Routes
-Path = book/collections/
-Method = GET
-Middleware = Auth
-
-Path = book/collection/add/
-Method = POST
-Middleware = Auth
-Params = - book_id: required
+Path = book/collections/<br>
+Method = GET<br>
+Middleware = Auth<br>
+<br>
+Path = book/collection/add/<br>
+Method = POST<br>
+Middleware = Auth<br>
+Params = - book_id: required<br>
